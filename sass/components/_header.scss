@@ -44,6 +44,9 @@
 }
 
 .contacts-header {
+	&__item:not(:last-child) {
+		margin-bottom: 16px;
+	}
 	&__icon {
 		width: 16px;
 		height: 12px;
@@ -64,35 +67,4 @@
 	&:focus {
 		color: getColor(accent);
 	}
-}
-
-.menu-button {
-	display: inline-flex;
-	margin: 0;
-	padding: 0;
-	border: none;
-	background-color: transparent;
-}
-.menu-button .icon-cross {
-	display: none;
-}
-
-.menu-button.is-open .icon-cross {
-	display: block;
-}
-
-.menu-button.is-open .icon-menu {
-	display: none;
-}
-
-.menu-container {
-	display: none;
-
-	position: absolute;
-	top: 102%;
-	left: 0;
-	width: 100%;
-	background-color: getColor(white-text);
-	text-align: center;
-	padding: 60px;
 }

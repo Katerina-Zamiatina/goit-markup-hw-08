@@ -4,6 +4,10 @@ body {
 	color: getColor(primary-text);
 }
 
+body.modal-open{
+	overflow: hidden;
+}
+
 p {
 	margin: 0;
 	color: getColor(primary-text);

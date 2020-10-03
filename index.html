@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="./css/main.min.css" />
 		<!-- <link rel="stylesheet" href="./css/styles.css" /> -->
 	</head>
-	<body class="page">
+	<body class="modal-open">
 		<!-- Навигация -->
 
 		<header class="page-header">
@@ -25,13 +25,18 @@
 					<a href="./index.html" class="link logo">
 						<span class="logo__web">Web</span><span class="logo__studio">Studio</span></a
 					>
-					<button type="button" class="menu-button is-open" data-menu-button aria-expanded="false" aria-controls="menu-container">
+					<button
+						type="button"
+						class="nav__button is-open"
+						data-menu-button
+						aria-expanded="false"
+						aria-controls="menu-container">
 						<svg width="40" height="40" aria-label="Переключатель мобильного меню">
 							<use class="icon-cross" href="./images/symbol-defs.svg#close-nav"></use>
 							<use class="icon-menu" href="./images/symbol-defs.svg#menu-nav"></use>
 						</svg>
 					</button>
-					<div class="menu-container" id="menu-container" data-menu>
+					<div class="nav__container is-open" id="menu-container" data-menu>
 						<ul class="menu">
 							<li class="menu__item">
 								<a href="./index.html" class="link menu__link menu__link--current">Студия</a>
