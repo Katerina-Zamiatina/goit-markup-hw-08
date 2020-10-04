@@ -1097,24 +1097,21 @@ textarea {
   color: #ffffff;
 }
 
-.contacts-container {
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .contacts-container {
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
 }
 
-.join-container {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .join-container {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .join-container {
     margin-left: 70px;
-    margin-bottom: 0;
   }
 }
 

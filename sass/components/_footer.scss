@@ -32,19 +32,17 @@
 	color: getColor(white-text);
 }
 .contacts-container {
-	margin-bottom: 60px;
-
-	@media screen and (min-width: 1200px) {
-		margin-bottom: 0;
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 60px;
 	}
 }
 
 .join-container {
-	margin-bottom: 60px;
-
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 60px;
+	}
 	@media screen and (min-width: 1200px) {
 		margin-left: 70px;
-		margin-bottom: 0;
 	}
 }
 
