@@ -489,6 +489,12 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+  .nav {
+    min-height: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -547,7 +553,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .menu__link--current::after {
-    bottom: -23px;
+    bottom: -33px;
   }
 }
 
@@ -656,6 +662,7 @@ textarea {
   }
   .nav__container.is-open {
     display: block;
+    z-index: 1;
   }
 }
 
@@ -689,6 +696,12 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    min-height: 80px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -750,7 +763,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .menu__link--current::after {
-    bottom: -23px;
+    bottom: -33px;
   }
 }
 
