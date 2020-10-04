@@ -496,6 +496,7 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 80px;
   }
 }
 
@@ -544,17 +545,40 @@ textarea {
   background-color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .menu__link--current::after {
+    bottom: -23px;
+  }
+}
+
 .menu__link:hover, .menu__link:focus {
   color: #2196f3;
 }
 
-.contacts-header__item:not(:last-child) {
-  margin-bottom: 16px;
+@media screen and (max-width: 767px) {
+  .contacts-header__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .contacts-header__item:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts-header__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 8px;
   }
 }
 
@@ -681,6 +705,18 @@ textarea {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url();
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url();
+  }
 }
 
 .hero .container {
